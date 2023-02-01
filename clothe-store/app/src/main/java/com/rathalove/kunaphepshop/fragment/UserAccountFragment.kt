@@ -1,34 +1,18 @@
-package com.ratha.kunapheapmobile.fragment
+package com.rathalove.kunaphepshop.fragment
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.Toast
-import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
-import com.ratha.kunapheapmobile.API.APIUserInterface
-import com.ratha.kunapheapmobile.API.RetrofitClientInstance
-import com.ratha.kunapheapmobile.DataModel.LoginResponse
-import com.ratha.kunapheapmobile.DataModel.SignInBody
-import com.ratha.kunapheapmobile.DataModel.UserDataResponse
-import com.ratha.kunapheapmobile.Login_activity
-import com.ratha.kunapheapmobile.MainActivity
-import com.ratha.kunapheapmobile.R
-import com.ratha.kunapheapmobile.RoomDataBase.UserLogIn.UserData
-import com.ratha.kunapheapmobile.RoomDataBase.UserLogIn.UserDatabase
-import com.ratha.kunapheapmobile.databinding.FragmentUserAccountBinding
+import com.rathalove.kunaphepshop.MainActivity
+import com.rathalove.kunaphepshop.R
+import com.rathalove.kunaphepshop.RoomDataBase.UserLogIn.UserDatabase
+import com.rathalove.kunaphepshop.databinding.FragmentUserAccountBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"

@@ -1,3 +1,3 @@
-package com.ratha.kunapheapmobile.DataModel
+package com.rathalove.kunaphepshop.DataModel
 
 data class CateData(var data: CategoryData)

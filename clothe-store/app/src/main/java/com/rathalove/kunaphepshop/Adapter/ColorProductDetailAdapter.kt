@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile.Adapter
+package com.rathalove.kunaphepshop.Adapter
 
 import android.content.Context
 import android.graphics.Color
@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import com.ratha.kunapheapmobile.R
+import com.rathalove.kunaphepshop.R
+
 import java.util.LinkedList
 
 class ColorProductDetailAdapter(var context: Context, var listItem: LinkedList<String>): Adapter<ColorProductDetailAdapter.MyViewHolder>() {

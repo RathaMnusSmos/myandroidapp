@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile
+package com.rathalove.kunaphepshop
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,18 +10,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationBarView
-import com.ratha.kunapheapmobile.API.APIUserInterface
-import com.ratha.kunapheapmobile.API.RetrofitClientInstance
-import com.ratha.kunapheapmobile.DataModel.LoginResponse
-import com.ratha.kunapheapmobile.DataModel.SignInBody
-import com.ratha.kunapheapmobile.DataModel.UserDataResponse
-import com.ratha.kunapheapmobile.RoomDataBase.UserLogIn.UserData
-import com.ratha.kunapheapmobile.RoomDataBase.UserLogIn.UserDatabase
-import com.ratha.kunapheapmobile.databinding.ActivityMainBinding
-import com.ratha.kunapheapmobile.fragment.HomeFragmmenrt
-import com.ratha.kunapheapmobile.fragment.ItemFragment
-import com.ratha.kunapheapmobile.fragment.UserAccountFragment
+import com.rathalove.kunaphepshop.API.APIUserInterface
+import com.rathalove.kunaphepshop.API.RetrofitClientInstance
+import com.rathalove.kunaphepshop.DataModel.LoginResponse
+import com.rathalove.kunaphepshop.DataModel.SignInBody
+import com.rathalove.kunaphepshop.RoomDataBase.UserLogIn.UserDatabase
+import com.rathalove.kunaphepshop.databinding.ActivityMainBinding
+import com.rathalove.kunaphepshop.fragment.HomeFragmmenrt
+import com.rathalove.kunaphepshop.fragment.ItemFragment
+import com.rathalove.kunaphepshop.fragment.UserAccountFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

@@ -1,9 +1,9 @@
-package com.ratha.kunapheapmobile.API
+package com.rathalove.kunaphepshop.API
 
-import com.ratha.kunapheapmobile.DataModel.*
-import com.ratha.kunapheapmobile.DataModel.PojoAllProduct.AllProduct
-import com.ratha.kunapheapmobile.DataPojo_AllCategory.AllCategoryData
-import com.ratha.kunapheapmobile.DataPojo_AllProduct.AllProductData
+
+import com.rathalove.kunaphepshop.DataModel.*
+import com.rathalove.kunaphepshop.DataModel.PojoAllProduct.AllProduct
+import com.rathalove.kunaphepshop.DataPojo_AllCategory.AllCategoryData
 import retrofit2.Call
 import retrofit2.http.*
 

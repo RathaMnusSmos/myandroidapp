@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile
+package com.rathalove.kunaphepshop
 
 import android.os.Bundle
 import android.util.Log
@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
-import com.ratha.kunapheapmobile.API.APIUserInterface
-import com.ratha.kunapheapmobile.API.RetrofitClientInstance
-import com.ratha.kunapheapmobile.Adapter.ColorProductDetailAdapter
-import com.ratha.kunapheapmobile.DataModel.PojoAllProduct.AllProduct
-import com.ratha.kunapheapmobile.databinding.ActivityViewProductBinding
-import com.ratha.kunapheapmobile.fragment.HomeFragmmenrt
+import com.rathalove.kunaphepshop.API.APIUserInterface
+import com.rathalove.kunaphepshop.API.RetrofitClientInstance
+import com.rathalove.kunaphepshop.Adapter.ColorProductDetailAdapter
+import com.rathalove.kunaphepshop.DataModel.PojoAllProduct.AllProduct
+import com.rathalove.kunaphepshop.databinding.ActivityViewProductBinding
+import com.rathalove.kunaphepshop.fragment.HomeFragmmenrt
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

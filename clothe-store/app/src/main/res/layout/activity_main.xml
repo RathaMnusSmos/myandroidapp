@@ -5,7 +5,7 @@
     <data>
         <variable
             name="mainActivity"
-            type="com.ratha.kunapheapmobile.MainActivity" />
+            type="com.rathalove.kunaphepshop.MainActivity" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@color/maincolor"

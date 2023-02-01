@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile.DataModel
+package com.rathalove.kunaphepshop.DataModel
 
 data class LoginResponse(
     val username: String,
