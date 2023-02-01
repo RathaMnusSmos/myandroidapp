@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile.DataModel.PojoAllProduct
+package com.rathalove.kunaphepshop.DataModel.PojoAllProduct
 
 import com.google.gson.annotations.SerializedName
 

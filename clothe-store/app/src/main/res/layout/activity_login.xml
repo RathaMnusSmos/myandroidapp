@@ -3,7 +3,7 @@
     <data>
         <variable
             name="loginActivity"
-            type="com.ratha.kunapheapmobile.Login_activity" />
+            type="com.rathalove.kunaphepshop.Login_activity" />
     </data>
 
     <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"

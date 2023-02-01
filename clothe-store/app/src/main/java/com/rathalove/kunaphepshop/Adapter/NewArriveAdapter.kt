@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile.Adapter
+package com.rathalove.kunaphepshop.Adapter
 
 import android.content.Context
 import android.util.Log
@@ -11,10 +11,11 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import com.ratha.kunapheapmobile.DataModel.NewArriveItemData
-import com.ratha.kunapheapmobile.DataModel.PojoAllProduct.AllProduct
-import com.ratha.kunapheapmobile.Listener.OnItemClickListener
-import com.ratha.kunapheapmobile.R
+import com.rathalove.kunaphepshop.DataModel.PojoAllProduct.AllProduct
+import com.rathalove.kunaphepshop.Listener.OnItemClickListener
+
+import com.rathalove.kunaphepshop.R
+
 import com.squareup.picasso.Picasso
 import java.util.*
 

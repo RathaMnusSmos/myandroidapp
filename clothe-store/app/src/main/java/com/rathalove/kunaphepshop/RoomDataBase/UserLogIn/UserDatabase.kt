@@ -1,10 +1,10 @@
-package com.ratha.kunapheapmobile.RoomDataBase.UserLogIn
+package com.rathalove.kunaphepshop.RoomDataBase.UserLogIn
 
 import android.content.Context
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@androidx.room.Database(entities =  [UserData::class], exportSchema =  false, version = 3)
+@androidx.room.Database(entities =  [UserData::class], exportSchema =  false, version = 4)
 abstract class UserDatabase: RoomDatabase(){
     abstract fun userDao(): UserDao
     companion object{

@@ -1,31 +1,27 @@
-package com.ratha.kunapheapmobile
+package com.rathalove.kunaphepshop
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.lifecycleScope
-import com.google.gson.Gson
-import com.ratha.kunapheapmobile.API.APIUserInterface
-import com.ratha.kunapheapmobile.API.RetrofitClientInstance
-import com.ratha.kunapheapmobile.DataModel.LoginResponse
-import com.ratha.kunapheapmobile.DataModel.SignInBody
-import com.ratha.kunapheapmobile.DataModel.UserDataResponse
-import com.ratha.kunapheapmobile.RoomDataBase.UserLogIn.UserData
-import com.ratha.kunapheapmobile.RoomDataBase.UserLogIn.UserDatabase
-import com.ratha.kunapheapmobile.databinding.ActivityLoginBinding
+import com.rathalove.kunaphepshop.API.APIUserInterface
+import com.rathalove.kunaphepshop.API.RetrofitClientInstance
+import com.rathalove.kunaphepshop.DataModel.LoginResponse
+import com.rathalove.kunaphepshop.DataModel.SignInBody
+import com.rathalove.kunaphepshop.DataModel.UserDataResponse
+import com.rathalove.kunaphepshop.RoomDataBase.UserLogIn.UserData
+import com.rathalove.kunaphepshop.RoomDataBase.UserLogIn.UserDatabase
+import com.rathalove.kunaphepshop.databinding.ActivityLoginBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import okhttp3.ResponseBody
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.http.GET
+
 
 import java.util.regex.Pattern
 

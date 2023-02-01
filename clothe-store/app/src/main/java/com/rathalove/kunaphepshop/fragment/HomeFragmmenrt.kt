@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile.fragment
+package com.rathalove.kunaphepshop.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,20 +13,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.google.gson.Gson
-import com.ratha.kunapheapmobile.API.APIUserInterface
-import com.ratha.kunapheapmobile.API.RetrofitClientInstance
-import com.ratha.kunapheapmobile.Adapter.NewArriveAdapter
-import com.ratha.kunapheapmobile.Adapter.TopCategoryAdapter
-import com.ratha.kunapheapmobile.DataModel.CategoryData
-import com.ratha.kunapheapmobile.DataModel.NewArriveItemData
-import com.ratha.kunapheapmobile.DataModel.PojoAllProduct.AllProduct
-import com.ratha.kunapheapmobile.DataModel.TopCategoryItemData
-import com.ratha.kunapheapmobile.DataPojo_AllCategory.AllCategoryData
-import com.ratha.kunapheapmobile.DataPojo_AllProduct.AllProductData
-import com.ratha.kunapheapmobile.Listener.OnItemClickListener
-import com.ratha.kunapheapmobile.R
-import com.ratha.kunapheapmobile.ViewProductActivity
-import com.ratha.kunapheapmobile.databinding.FragmentHomeFragmmenrtBinding
+
+import com.rathalove.kunaphepshop.API.APIUserInterface
+import com.rathalove.kunaphepshop.API.RetrofitClientInstance
+import com.rathalove.kunaphepshop.Adapter.NewArriveAdapter
+import com.rathalove.kunaphepshop.Adapter.TopCategoryAdapter
+import com.rathalove.kunaphepshop.DataModel.CategoryData
+import com.rathalove.kunaphepshop.DataModel.PojoAllProduct.AllProduct
+import com.rathalove.kunaphepshop.DataModel.PojoAllProduct.NewArriveItemData
+import com.rathalove.kunaphepshop.DataModel.TopCategoryItemData
+import com.rathalove.kunaphepshop.DataPojo_AllCategory.AllCategoryData
+import com.rathalove.kunaphepshop.Listener.OnItemClickListener
+import com.rathalove.kunaphepshop.R
+import com.rathalove.kunaphepshop.ViewProductActivity
+import com.rathalove.kunaphepshop.databinding.FragmentHomeFragmmenrtBinding
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -34,7 +35,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-class HomeFragmmenrt : Fragment(),OnItemClickListener{
+class HomeFragmmenrt : Fragment(), OnItemClickListener {
 
     override fun onCreateView(
         inflater: LayoutInflater,

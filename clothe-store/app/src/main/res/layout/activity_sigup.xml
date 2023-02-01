@@ -3,7 +3,7 @@
     <data>
         <variable
             name="signUpActivity"
-            type="com.ratha.kunapheapmobile.Sigup_Activity" />
+            type="com.rathalove.kunaphepshop.Sigup_Activity" />
     </data>
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"

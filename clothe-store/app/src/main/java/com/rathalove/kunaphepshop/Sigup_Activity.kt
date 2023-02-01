@@ -1,4 +1,4 @@
-package com.ratha.kunapheapmobile
+package com.rathalove.kunaphepshop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,11 +7,11 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import com.ratha.kunapheapmobile.API.APIUserInterface
-import com.ratha.kunapheapmobile.API.RetrofitClientInstance
-import com.ratha.kunapheapmobile.DataModel.SignUpBody
-import com.ratha.kunapheapmobile.DataModel.SignUpResponse
-import com.ratha.kunapheapmobile.databinding.ActivitySigupBinding
+import com.rathalove.kunaphepshop.API.APIUserInterface
+import com.rathalove.kunaphepshop.API.RetrofitClientInstance
+import com.rathalove.kunaphepshop.DataModel.SignUpBody
+import com.rathalove.kunaphepshop.DataModel.SignUpResponse
+import com.rathalove.kunaphepshop.databinding.ActivitySigupBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
