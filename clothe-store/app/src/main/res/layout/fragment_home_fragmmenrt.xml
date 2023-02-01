@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    tools:context=".fragment.HomeFragmmenrt">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+                       <com.denzcoskun.imageslider.ImageSlider
+                           android:id="@+id/image_slider"
+                           app:iss_period="1000"
+                           app:iss_auto_cycle="true"
+                           app:iss_delay="3000"
+                           android:background="@color/maincolor"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"/>
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+               <!--===Top Category=======================-->
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/top_category"
+                            android:text="Top Category"
+                            android:textSize="18dp"
+                            android:textColor="@color/primary"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/segoe_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/top_category_item_RecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="357dp">
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </RelativeLayout>
+               <!--=========End Top Category=======================-->
+               <!-- new arrive!-->
+               <RelativeLayout
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <androidx.appcompat.widget.LinearLayoutCompat
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <TextView
+                           android:id="@+id/new_arrive"
+                           android:text="New Arrive"
+                           android:textSize="18sp"
+                           android:textColor="@color/primary"
+                           android:layout_margin="10dp"
+                           android:fontFamily="@font/segoe_bold"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+                       <androidx.recyclerview.widget.RecyclerView
+                           android:id="@+id/newArrive_item_RecyclerView"
+                           android:layout_width="match_parent"
+                           android:layout_height="408dp">
+                       </androidx.recyclerview.widget.RecyclerView>
+                   </androidx.appcompat.widget.LinearLayoutCompat>
+               </RelativeLayout>
+               <!-- =================End new arrive!==================-->
+
+               <!-- footer!-->
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="35dp"
+                   android:layout_marginBottom="25dp">
+                   <androidx.appcompat.widget.LinearLayoutCompat
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+                       <TextView
+                           android:text="Follow us"
+                           android:textColor="@color/primary"
+                           android:fontFamily="@font/segoe_bold"
+                           android:textSize="16dp"
+                           android:textAlignment="center"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+                       <androidx.appcompat.widget.LinearLayoutCompat
+                           android:gravity="center"
+                           android:layout_marginTop="10dp"
+                           android:layout_gravity="center"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+                           <ImageView
+                               android:id="@+id/facebook"
+                               android:src="@drawable/facebookicon"
+                               android:layout_marginEnd="10dp"
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"/>
+                           <ImageView
+                               android:id="@+id/tiktook"
+                               android:src="@drawable/tiktokicon"
+                               android:layout_marginEnd="10dp"
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"/>
+                           <ImageView
+                               android:id="@+id/instagram"
+                               android:src="@drawable/instagramicon"
+                               android:layout_marginEnd="10dp"
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"/>
+                       </androidx.appcompat.widget.LinearLayoutCompat>
+                   </androidx.appcompat.widget.LinearLayoutCompat>
+               </RelativeLayout>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+       </RelativeLayout>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

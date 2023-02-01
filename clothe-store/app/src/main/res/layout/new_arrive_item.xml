@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginEnd="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="215dp"
+        android:layout_height="408dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/new_arrive_image"
+                android:src="@drawable/product"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="348dp"/>
+            <TextView
+                android:id="@+id/new_arrive_itemPrice"
+                android:text="$12.99"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/seguisb"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:id="@+id/color_item_Recycle"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+            <TextView
+                android:id="@+id/new_arrive_itemName"
+                android:text="Cropped Cardigan"
+                android:textColor="@color/primary"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="@font/seguisb"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

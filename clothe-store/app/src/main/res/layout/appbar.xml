@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbarCus"
+    android:background="@color/primary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="?attr/actionBarSize">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_rowWeight="1"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="center"
+                       android:gravity="center_vertical"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/segoe_bold"
+                           android:text="KUNAPHEAP STORE"
+                           android:textColor="@color/white"
+                           android:textSize="18sp" />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_marginLeft="5dp"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal"
+                       android:gravity="end"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <ImageButton
+                           android:src="@drawable/ic_baseline_search_24"
+                           android:background="@color/transparent"
+                           android:layout_gravity="center"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+                       <ImageButton
+                           android:id="@+id/notiOn"
+                           android:background="@color/transparent"
+                           android:src="@drawable/ic_baseline_notifications_24"
+                           android:layout_width="30dp"
+                           android:layout_height="40dp"/>
+                   </LinearLayout>
+               </LinearLayout>
+           </RelativeLayout>
+
+</Toolbar>
