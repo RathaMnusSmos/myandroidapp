@@ -2,6 +2,10 @@ package com.rathalove.kunaphepshop
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,6 +31,7 @@ class ViewProductActivity : AppCompatActivity() {
     private var slider :ArrayList<com.denzcoskun.imageslider.models.SlideModel> = ArrayList()
     private lateinit var colorRec: RecyclerView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_view_product)
@@ -49,6 +54,7 @@ class ViewProductActivity : AppCompatActivity() {
                 response: Response<ArrayList<AllProduct>>
             ) {
                 if (response.isSuccessful){
+                    var itemSize: LinkedList<String> = LinkedList()
                     Log.d("allPro", "data = ${response.body()!!}")
                     for (i in response.body()!!){
                         productData.add(i)
@@ -66,12 +72,25 @@ class ViewProductActivity : AppCompatActivity() {
                         if (!colors.contains(color)){
                             colors.add(color)
                         }
+                        var size = i.ColorOnSide!!.size!!.sizeName.toString()
+                        if (!itemSize.contains(size)){
+                            itemSize.add(size)
+                        }
+
+
+
                     }
                     val adapter : ColorProductDetailAdapter = ColorProductDetailAdapter(baseContext, colors)
                     val newArriveLinearLayoutManager: LinearLayoutManager = LinearLayoutManager(baseContext, LinearLayoutManager.HORIZONTAL, false)
                     colorRec = binding.productColorDetailRecyclerView
                     colorRec.layoutManager = newArriveLinearLayoutManager
                     colorRec.adapter = adapter
+
+
+                    var adapterItemDropdown: ArrayAdapter<String> = ArrayAdapter(this@ViewProductActivity, R.layout.drop_down_item, itemSize)
+                    binding.autoCompleteTxt.setAdapter(adapterItemDropdown)
+
+
 
                 }
 
@@ -82,5 +101,7 @@ class ViewProductActivity : AppCompatActivity() {
             }
 
         })
+
+
     }
 }
