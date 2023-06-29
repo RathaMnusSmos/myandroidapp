@@ -78,7 +78,6 @@ class ViewProductActivity : AppCompatActivity() {
                         }
 
 
-
                     }
                     val adapter : ColorProductDetailAdapter = ColorProductDetailAdapter(baseContext, colors)
                     val newArriveLinearLayoutManager: LinearLayoutManager = LinearLayoutManager(baseContext, LinearLayoutManager.HORIZONTAL, false)
@@ -86,9 +85,11 @@ class ViewProductActivity : AppCompatActivity() {
                     colorRec.layoutManager = newArriveLinearLayoutManager
                     colorRec.adapter = adapter
 
-
+                    //drop down adapter
                     var adapterItemDropdown: ArrayAdapter<String> = ArrayAdapter(this@ViewProductActivity, R.layout.drop_down_item, itemSize)
                     binding.autoCompleteTxt.setAdapter(adapterItemDropdown)
+
+//                    binding.autoCompleteTxt.setOnItemClickListener(AdapterView.OnItemClickListener(adapter))
 
 
 
